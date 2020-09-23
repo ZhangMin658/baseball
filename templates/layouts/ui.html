@@ -1,0 +1,18 @@
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/download.js"></script>
+<link rel="stylesheet" type="text/css" href="static/css/ui.css"/>
+<div class="content">
+    <div class="control">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label>Input video:</label>
+            <input type="file" id="inFile" name="inFile">
+            <label class="out">Output video:</label>
+            <input type="text" id="outFile" name="outFile">
+            <button type="submit" class="start" value="start">Start</button>
+            <button id="download" disabled data="{{ out_file }}">Download</button>
+        </form>
+    </div>
+    <div class="show">
+        <div class="circle"></div>
+    </div>
+</div>

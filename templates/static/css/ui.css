@@ -1,0 +1,48 @@
+.content{
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    width: 180px;
+    height: 180px;
+    border: 10px inset rgb(133,224,242);
+    /* display: black; */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    border-radius: 200px;
+    -moz-animation: rotate 5s infinitelinear;
+    -webkit-animation: rotate 5s infinite linear;
+    animation: rotate 5s infinite linear;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+@-webkit-keyframes rotate{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+.control{
+    position: absolute;
+    top: 10%;
+    left: 10.5%;
+    width: 100%;
+}
+.out{
+    margin-left: 12%;
+}
+#outFile{
+    width: 15%;
+}
+button{
+    width: 5%;
+    background-color: #d4c2e0;
+    border-color: #d4c2e0;
+}
+.start{
+    margin-left: 8%;
+}
+#download{
+    margin-left: 6%;
+}
